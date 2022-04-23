@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Placas Eletrónicas</title>
+  <link rel="stylesheet" href="css/owl/style.css">
+</head>
+<body>
+    <label class="preco" for="">P L A C A S - E L E T R Ó N I C A S</label>
+    <label class="descricao">COLOQUE O VALOR DO KILO ATUAL</label>
+  <form action="" method="post">
+        
+        valor_unitario:<input type="text" name="valor_unitario" id="valor_unitario"/>
+        peso: <input  type="text" name="peso" id="peso" value="0" />
+        total: <input  type="text" name="total" id="total" readonly="readonly" />
+
+  </form>
+  <label class="preco" for="">PREÇO DO KILO  ATUAL = R$ 4,00</label>
+ 
+    <h4>Este projeto faz parte do curso ministrado pela  DIO (Carrefour Web Developer)  </h4>
+     
+    <footer>
+        <button>
+            <a href="index.html">VOLTAR</a>
+        </button>
+        <h4> Desenvolvido por Paulo Franco 22/04/2022</h4>
+    </footer>
+
+<script type="text/javascript">
+function id(el) {
+  return document.getElementById( el );
+}
+function total( un, peso ) {
+  return parseFloat(un.replace(',', '.'), 10) * parseFloat(peso.replace(',', '.'), 10);
+}
+window.onload = function() {
+  id('valor_unitario').addEventListener('keyup', function() {
+    var result = total( this.value , id('peso').value );
+    id('total').value = String(result.toFixed(2)).formatMoney();
+  });
+
+  id('peso').addEventListener('keyup', function(){
+    var result = total( id('valor_unitario').value , this.value );
+    id('total').value = String(result.toFixed(2)).formatMoney();
+  });
+}
+
+String.prototype.formatMoney = function() {
+  var v = this;
+
+  if(v.indexOf('.') === -1) {
+    v = v.replace(/([\d]+)/, "$1,00");
+  }
+
+  v = v.replace(/([\d]+)\.([\d]{1})$/, "$1,$20");
+  v = v.replace(/([\d]+)\.([\d]{2})$/, "$1,$2");
+  v = v.replace(/([\d]+)([\d]{3}),([\d]{2})$/, "$1.$2,$3");
+
+  return v;
+};
+</script>
+
+</body>
+</html>

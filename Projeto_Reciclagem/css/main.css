@@ -1,0 +1,70 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#1fb177  ;
+    text-align: center;
+    color: rgb(14, 18, 245);
+    font-size: 20px;
+    
+}
+body{
+    background: var(--preta);
+    font-family:'Times New Roman', Times, serif;
+}
+header .container{
+
+}
+header .logo{
+    color:var(--vermelho);
+    font-family: 'Arial Black',Times;
+    font-size: 40px;
+}
+header nav a{
+    text-decoration:solid bold;
+    color: rgb(235, 11, 11);
+    margin: 50px;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+header nav a:hover{
+    color: bisque;
+}
+.container-principal .logo{
+    background: #056642;
+    color: white;
+    font-size: 40px;
+    padding-bottom: 50px;
+    }
+.col-lg-3{
+     max-width: 25%;
+     padding-bottom: 20px;
+}
+.col-lg-3, p{
+    display: inline-block;
+}
+.p1{
+    color: darkgreen;
+}
+.p2{
+    color: brown;
+    padding-bottom: 20px;
+}
+.rio .rio2{
+   font-size: 200px;
+   width: 0;
+}
+.box-produtos{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.cor{
+    color: #E50914;
+}
+
+

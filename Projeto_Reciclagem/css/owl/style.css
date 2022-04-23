@@ -1,0 +1,70 @@
+*{
+    background-color: darkslategray;
+    color: cornsilk;
+}
+img{
+    width: 500px;
+    max-height: 365px;
+    padding: 65px;
+    
+    }
+img, p{
+    display: inline-block;
+}
+td{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+}
+span{
+    color: crimson;
+}
+h1{
+    text-align: center;
+}
+
+.conteudo{
+    font-size:30px;
+    text-align: center;
+}
+h4{
+    background: bisque;
+    color: black;
+    text-align: center;
+}
+header .lista-produtos,li {
+    background-color: rgb(100, 94, 94);
+    display: block;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.produtos{
+    font-size: 40px;
+    text-align: center;
+}
+.preco{
+   
+    background-color: aquamarine;
+    display: block;
+    color: rgb(187, 18, 18);
+    font-size: 60px;
+    text-align: center;
+    
+}
+input {
+    display: flex;
+    padding-top: 70px;
+    border: 4px solid black;
+    width: 280px;
+    height: 40px;
+    font-size: 50px;
+}
+.descricao{
+    
+  margin-top: 50px;
+    text-align: center;
+    font-size: 50px
+}
+
